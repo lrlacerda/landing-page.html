@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style-professor.css" />
+</head>
+
+<body>
+    <header>
+        <div class="layout-grid header-flex">
+            <nav id="navmenu">
+                <a href="">Início</a>
+                <a href="">Sobre</a>
+                <a href="">Desafios</a>
+                <a href="">Endereço</a>
+            </nav>
+            <img src="assets/img/menu-hamburger.svg" id="menu-mobile" alt="Abre o menu mobile"
+                onclick="mostrarMenu()" />
+        </div>
+    </header>
+
+    <main>
+        <article class="banner">
+            <div class="layout-grid banner-flex">
+                <div id="banner-infobox">
+                    <h1>Desenvolvimento de Sistemas 2023</h1>
+                    <p>Senai Informática</p>
+                    <img src="assets/img/Vector.png" alt="" />
+                </div>
+            </div>
+        </article>
+
+        <section class="sobre">
+            <div class="layout-grid">
+                <h2>Sobre os Projetos</h2>
+
+                <div class="linha">
+                    <img src="assets/img/imagem-seção-sobre 1.png"
+                        alt="Uma pessoa ministrando aulas para outras pessoas que olham fixamente" />
+
+                    <div class="participantes">
+                        <h3>Participantes</h3>
+
+                        <h4>Mais de 80 alunos organizados em 16 grupos</h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                            quos saepe labore explicabo itaque! Ducimus ut ex placeat
+                            beatae. Reiciendis, laboriosam? Illum voluptate debitis
+                            recusandae! Voluptates sunt officiis velit ipsam! Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Tempora quos saepe
+                            labore explicabo itaque! Ducimus ut ex placeat beatae.
+                            Reiciendis, laboriosam? Illum voluptate debitis recusandae!
+                            Voluptates sunt officiis velit ipsam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-grid">
+            <section class="endereco">
+                <h1>Endereço:</h1>
+                <p>
+                    Alameda Barão de Limeira, 539 Santa Cecilia, São Paulo - SP CEP:
+                    01202-001
+
+                    <iframe class="endereco-mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8651724217802!2d-46.56082358506896!3d-23.644999084641448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4328c992748f%3A0xcea3c3e698444297!2sSENAI%20S%C3%A3o%20Caetano%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1677676887644!5m2!1spt-BR!2sbr"
+                        width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </p>
+            </section>
+
+            <section class="rights">
+                <p>Copyright © 2020 - Escola Senai de Informática</p>
+            </section>
+        </div>
+    </footer>
+    <script>
+        function mostrarMenu() {
+            document.getElementById("navmenu").classList.toggle("mostrarMenu");
+        }
+    </script>
+</body>
+
+</html>
